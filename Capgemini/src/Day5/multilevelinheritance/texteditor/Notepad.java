@@ -1,9 +1,26 @@
 package Day5.multilevelinheritance.texteditor;
 
 public class Notepad {
+    protected String content;
 
-	public Notepad() {
-		// TODO Auto-generated constructor stub
-	}
+    public Notepad() {
+        this.content = "";
+    }
 
+    public void write(String text) {
+        content += text; //content = content+text
+    }
+
+    public void displayContent() {
+        System.out.println("Notepad Content: " + content);
+    }
+    
+    
+    /*
+     * returntype funcName()
+     * {
+     * 		//statement
+     * }
+     * 
+     * */
 }

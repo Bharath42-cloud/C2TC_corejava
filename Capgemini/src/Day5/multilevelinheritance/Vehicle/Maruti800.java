@@ -1,9 +1,13 @@
 package Day5.multilevelinheritance.Vehicle;
 
-public class Maruti800 {
+public class Maruti800 extends Maruti {
 
 	public Maruti800() {
-		// TODO Auto-generated constructor stub
+		System.out.println("Maruti Model: 800");
+	}
+
+	public void speed() {
+		System.out.println("Max: 80Kmph");
 	}
 
 }

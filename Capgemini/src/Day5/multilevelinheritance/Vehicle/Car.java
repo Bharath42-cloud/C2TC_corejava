@@ -1,9 +1,13 @@
 package Day5.multilevelinheritance.Vehicle;
 
 public class Car {
-
 	public Car() {
-		// TODO Auto-generated constructor stub
+		System.out.println("Class Car");
+	}
+
+	public void vehicleType() {
+		System.out.println("Vehicle Type: Car");
 	}
 
 }
+	
