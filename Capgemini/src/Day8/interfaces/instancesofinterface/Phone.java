@@ -1,9 +1,7 @@
 package Day8.interfaces.instancesofinterface;
 
-public class Phone {
+public interface Phone {
+	void call();
 
-	public Phone() {
-		// TODO Auto-generated constructor stub
-	}
-
+	void sms();
 }

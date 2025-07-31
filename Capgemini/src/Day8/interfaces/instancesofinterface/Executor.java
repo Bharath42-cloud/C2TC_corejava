@@ -1,9 +1,15 @@
 package Day8.interfaces.instancesofinterface;
 
 public class Executor {
-
-	public Executor() {
-		// TODO Auto-generated constructor stub
+	public static void main(String args[]) {
+		
+		Phone p1 = PhoneFactory.createPhone("Samsung"); 
+		p1.call();
+		p1.sms();
+		
+		p1 = PhoneFactory.createPhone("Jio"); 
+		p1.call();
+		p1.sms();
+		
 	}
-
 }

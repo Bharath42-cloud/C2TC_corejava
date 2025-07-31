@@ -1,9 +1,16 @@
 package Day8.interfaces.instancesofinterface;
 
-public class Jio {
+public class Jio implements Phone {
 
-	public Jio() {
-		// TODO Auto-generated constructor stub
+	@Override
+	public void call() {
+		System.out.println("Calling using Jio");
+	}
+
+	@Override
+	public void sms() {
+		System.out.println("Messaging using Jio");
+
 	}
 
 }

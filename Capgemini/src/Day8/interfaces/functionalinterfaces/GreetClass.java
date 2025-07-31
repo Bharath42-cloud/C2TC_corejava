@@ -1,9 +1,10 @@
 package Day8.interfaces.functionalinterfaces;
 
-public class GreetClass {
+public class GreetClass implements GreetInterface {
 
-	public GreetClass() {
-		// TODO Auto-generated constructor stub
+	@Override
+	public String greet() {		
+		return "Welcome to the world of Java";
 	}
 
 }
