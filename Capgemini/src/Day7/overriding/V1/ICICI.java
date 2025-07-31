@@ -1,9 +1,10 @@
 package Day7.overriding.V1;
 
-public class ICICI {
-
-	public ICICI() {
-		// TODO Auto-generated constructor stub
+//subclass
+public class ICICI extends RBI {
+	@Override
+	public float getRateOfInterest() {
+		return 6.9f;
 	}
 
 }

@@ -1,9 +1,10 @@
 package Day7.overriding.V1;
 
-public class HDFC {
-
-	public HDFC() {
-		// TODO Auto-generated constructor stub
+//subclass
+public class HDFC extends RBI {
+	@Override
+	public float getRateOfInterest() {
+		return 6.8f;
 	}
 
 }

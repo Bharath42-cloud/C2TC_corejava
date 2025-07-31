@@ -2,8 +2,19 @@ package Day7.overriding.V1;
 
 public class OverridingDemo {
 
-	public OverridingDemo() {
-		// TODO Auto-generated constructor stub
+	public static void main(String[] args) {
+		RBI rbi;
+
+//		Dynamic binding assigning child class object to parent class reference variable.
+		rbi = new SBI();
+		System.out.println(rbi.getRateOfInterest());
+
+		rbi = new ICICI();
+		System.out.println(rbi.getRateOfInterest());
+
+		rbi = new HDFC();
+		System.out.println(rbi.getRateOfInterest());
+
 	}
 
 }

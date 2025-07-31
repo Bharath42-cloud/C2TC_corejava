@@ -1,9 +1,9 @@
 package Day7.overloading.V1;
 
+//Superclass
 public class RBI {
-
-	public RBI() {
-		// TODO Auto-generated constructor stub
+	public float getRateOfInterest() {
+		return 6.7f;
 	}
 
 }
