@@ -1,9 +1,9 @@
 package Day9;
 
-public class StringSubclass {
+public class StringSubClass extends String {
 
-	public StringSubclass() {
-		// TODO Auto-generated constructor stub
+	public static void main(String[] args) {
+		
+
 	}
-
 }
