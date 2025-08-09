@@ -1,9 +1,24 @@
 package Day14.interthreadcommunication;
 
-public class Producer {
+public class Producer extends Thread {
+	Q obj;
 
-	public Producer() {
-		// TODO Auto-generated constructor stub
+	public Producer(Q obj) {
+
+		this.obj = obj;
+		start();
 	}
 
+	public void run() {
+		int i = 0;
+		while (true) {
+			try {
+				Thread.sleep(3000);
+			} catch (Exception e) {
+				System.out.println(e);
+			}
+			obj.put(i);
+			i++;
+		}
+	}
 }

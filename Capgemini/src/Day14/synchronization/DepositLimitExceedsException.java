@@ -1,9 +1,13 @@
 package Day14.synchronization;
 
-public class DepositLimitExceedsException {
+public class DepositLimitExceedsException extends Exception {
 
-	public DepositLimitExceedsException() {
-		// TODO Auto-generated constructor stub
+	public DepositLimitExceedsException()
+	{
+		super("Daily limit of Deposit is exceeded..");
 	}
-
+	public DepositLimitExceedsException(String message)
+	{
+		super(message);
+	}
 }

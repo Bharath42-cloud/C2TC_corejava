@@ -1,9 +1,12 @@
 package Day14.synchronization;
 
-public class InsufficientBalanceException {
+public class InsufficientBalanceException extends Exception {
 
 	public InsufficientBalanceException() {
-		// TODO Auto-generated constructor stub
+		super("Insufficient balance in your account");
 	}
 
+	public InsufficientBalanceException(String message) {
+		super(message);
+	}
 }
