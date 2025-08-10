@@ -1,9 +1,10 @@
 package Day15.generics;
 
 public class GenericMethod {
-
-	public GenericMethod() {
-		// TODO Auto-generated constructor stub
-	}
-
+	//Generic Method
+		public <E> void displayArrayElements(E[] elements) {
+			for (E element : elements) {
+				System.out.println("element is: " + element);
+			}
+		}
 }

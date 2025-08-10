@@ -1,9 +1,9 @@
 package Day15.generics;
 
-public class MinMax {
+//Generic Interface
+public interface MinMax<T extends Comparable<T>> {
 
-	public MinMax() {
-		// TODO Auto-generated constructor stub
-	}
+	T min();
 
+	T max();
 }

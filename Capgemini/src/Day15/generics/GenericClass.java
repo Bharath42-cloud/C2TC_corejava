@@ -1,9 +1,16 @@
 package Day15.generics;
 
-public class GenericClass {
-
-	public GenericClass() {
-		// TODO Auto-generated constructor stub
+//Generic Class
+class GenericClass<T>
+{
+	T data;
+	void set(T data)
+	{
+		this.data=data;
 	}
-
+	
+	T get()
+	{
+		return data;
+	}
 }

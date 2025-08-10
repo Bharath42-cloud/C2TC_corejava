@@ -1,9 +1,16 @@
 package Day15.generics;
 
-public class UpperBoundedWildCard {
+import java.util.ArrayList;
 
-	public UpperBoundedWildCard() {
-		// TODO Auto-generated constructor stub
+public class UpperBoundedWildCard {
+	//Parameter ArrayList(<?>) is List of any subclass object of Number
+	public static Double sumOfList(ArrayList<? extends Number> al) // any subclass of Number class
+	{
+		double sum = 0.0;
+		for (Number n : al) {
+			sum = sum + n.doubleValue();
+		}
+		return sum;
 	}
 
 }
