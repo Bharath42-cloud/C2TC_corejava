@@ -1,9 +1,26 @@
 package Day21.v1.employeedb;
 
+import java.sql.SQLException;
+
 public class EmployeeDemo {
 
-	public EmployeeDemo() {
-		// TODO Auto-generated constructor stub
+	public static void main(String[] args) {
+		try {
+			EmployeeService.showFirst();
+			EmployeeService.showLast();
+			EmployeeService.showPrevious();
+			EmployeeService.showPrevious();
+			EmployeeService.showNext();
+			EmployeeService.updateSalary(65000);
+			
+			
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 	}
 
 }
