@@ -1,9 +1,6 @@
 package Day19.V1;
 
-public class Operations {
-
-	public Operations() {
-		// TODO Auto-generated constructor stub
-	}
-
+@FunctionalInterface
+public interface Operations {
+	float performArithmetic(int a, int b);
 }

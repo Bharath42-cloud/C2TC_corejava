@@ -1,9 +1,5 @@
 package Day19.V1;
 
-public class Palindrome {
-
-	public Palindrome() {
-		// TODO Auto-generated constructor stub
-	}
-
+public interface Palindrome<T> {
+	boolean checkPalindrome(T data);
 }

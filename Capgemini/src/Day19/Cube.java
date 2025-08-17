@@ -1,9 +1,7 @@
 package Day19;
 
-public class Cube {
-
-	public Cube() {
-		// TODO Auto-generated constructor stub
-	}
-
+@FunctionalInterface
+interface Cube {
+	int calculate(int a); // only one abstract method
+	//int sqr(int n);
 }

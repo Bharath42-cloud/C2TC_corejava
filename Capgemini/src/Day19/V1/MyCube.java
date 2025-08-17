@@ -1,9 +1,7 @@
 package Day19.V1;
 
-public class MyCube {
-
-	public MyCube() {
-		// TODO Auto-generated constructor stub
-	}
-
+@FunctionalInterface
+public interface MyCube {
+	int getCube(int no);
+	//void show(); not allow more than one abstract method
 }
