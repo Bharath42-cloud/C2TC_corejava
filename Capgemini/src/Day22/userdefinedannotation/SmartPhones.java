@@ -1,9 +1,14 @@
 package Day22.userdefinedannotation;
 
-public class SmartPhones {
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.RetentionPolicy;
 
-	public SmartPhones() {
-		// TODO Auto-generated constructor stub
-	}
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface SmartPhones {
+	String os() default "Android";
 
+	int version() default 1;
 }
